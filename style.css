@@ -42,6 +42,10 @@ body {
   margin-top: -250px;
 }
 
+a{
+    text-decoration: none;
+}
+
 .circle_1 {
   background: linear-gradient(rgb(13, 13, 98), black);
   height: 200px;
