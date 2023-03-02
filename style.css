@@ -1,0 +1,109 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+main{
+    background: linear-gradient(120deg, #a6a6a6 -100%, #000000 20% ); 
+    height: 100vh;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: columns;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.container_circles{
+  display: flex;
+    flex-direction: columns;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.txt_1{
+    font-family: oswald;
+    font-weight: 200;
+    color: white;
+    font-size: 18px;
+    z-index: 3;
+}
+.txt_2{
+    font-family: oswald;
+     font-weight: 200;
+     color: white;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.txt_3{
+    font-family: oswald;
+     font-weight: 200;
+     color: white;
+    font-size: 18px;
+    z-index: 1;
+   
+}
+
+.circle_1{
+background: linear-gradient(rgb(13, 13, 98), black);
+height: 200px;
+width: 200px;
+border-radius: 50%;
+box-shadow: 1px 1px 10px 10px black;
+border: outset 4px rgb(14, 3, 56);
+ display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotation 30s infinite ;
+    transition: 2s ease-in;
+}
+.circle_1:hover{
+    border-radius: 35px;
+    border: groove 3px black;
+    box-shadow: 1px 1px 10px 3px black;
+}
+
+.circle_2{
+    background: linear-gradient(rgb(4, 17, 77), black);
+height: 300px;
+width: 300px;
+border-radius: 50%;
+box-shadow: 1px 1px 10px 10px black;
+border: outset 4px rgb(22, 17, 51);
+display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotation 50s infinite ;  
+     transition: 3s ease-out;
+}
+.circle_2:hover{
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px 6px black;
+}
+
+.circle_3{
+    background: linear-gradient(rgb(4, 4, 43), black);
+height: 400px;
+width: 400px;
+border-radius: 50%;
+box-shadow: 1px 1px 10px 10px black;
+border: outset 4px rgb(3, 1, 73);
+display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotation 70s infinite ;
+     transition: 1s ease-in;
+}
+.circle_3:hover{
+    border-radius: 15px;
+}
+
+@keyframes rotation {
+    to{
+        rotate: 0deg;
+    }
+    from{
+rotate: 360deg;
+    }
+}
