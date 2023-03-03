@@ -56,13 +56,14 @@ a {
   align-items: center;
   justify-content: center;
   animation: rotation 20s infinite;
-  transition: 2s ease-in;
+  transition: .800s ease-in;
+   visibility: visible;
 }
 .circle_center:hover {
   border-radius: 20px;
-  border: groove 3px rgb(6, 3, 60);
+  border: groove 3px rgb(41, 39, 80);
   box-shadow: 1px 1px 10px 3px rgb(62, 58, 132);
-  background: transparent;
+
 }
 
 .circle_1 {
@@ -77,6 +78,7 @@ a {
   justify-content: center;
   animation: rotation 30s infinite;
   transition: .700s ease-in;
+   visibility: visible;
 }
 .circle_1:hover {
   border-radius: 35px;
@@ -96,6 +98,7 @@ a {
   justify-content: center;
   animation: rotation 50s infinite;
   transition: .800s ease-out;
+   visibility: visible;
 }
 .circle_2:hover {
   border-radius: 25px;
@@ -115,6 +118,7 @@ a {
   justify-content: center;
   animation: rotation 70s infinite;
   transition: .700s ease-in;
+  visibility: visible;
 }
 .circle_3:hover {
   border-radius: 15px;
@@ -128,4 +132,20 @@ a {
   from {
     rotate: 360deg;
   }
+}
+
+@keyframes opacity {
+  to {
+    opacity:0;
+  }
+  from {
+   opacity:1;
+  }
+}
+
+
+
+.hidden{
+    visibility: hidden;
+    animation: opacity 9s ease-in;
 }
