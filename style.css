@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background: linear-gradient(120deg, #a6a6a6 -100%, #000000 20%);
   height: 100vh;
@@ -14,7 +13,7 @@ body {
   align-items: center;
   align-content: center;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 .txt_1 {
   font-family: oswald;
@@ -29,8 +28,8 @@ body {
   font-weight: 200;
   color: white;
   font-size: 18px;
-   text-align: center;
-  margin-top: 40px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .txt_3 {
@@ -42,34 +41,53 @@ body {
   margin-top: -250px;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
+}
+
+.circle_center {
+  background: linear-gradient(rgb(13, 13, 98), black);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px 10px black;
+  border: outset 4px rgb(29, 19, 68);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rotation 20s infinite;
+  transition: 2s ease-in;
+}
+.circle_center:hover {
+  border-radius: 20px;
+  border: groove 3px rgb(6, 3, 60);
+  box-shadow: 1px 1px 10px 3px rgb(62, 58, 132);
+  background: transparent;
 }
 
 .circle_1 {
   background: linear-gradient(rgb(13, 13, 98), black);
-  height: 200px;
-  width: 200px;
+  height: 220px;
+  width: 220px;
   border-radius: 50%;
   box-shadow: 1px 1px 10px 10px black;
-  border: outset 4px rgb(14, 3, 56);
+  border: outset 4px rgb(37, 26, 84);
   display: flex;
   align-items: center;
   justify-content: center;
   animation: rotation 30s infinite;
-  transition: 2s ease-in;
+  transition: .700s ease-in;
 }
 .circle_1:hover {
   border-radius: 35px;
-  border: groove 3px black;
+  border: solid 3px rgb(62, 60, 112);
   box-shadow: 1px 1px 10px 3px black;
-  background: transparent;
 }
 
 .circle_2 {
   background: linear-gradient(rgb(4, 17, 77), black);
-  height: 300px;
-  width: 300px;
+  height: 320px;
+  width: 320px;
   border-radius: 50%;
   box-shadow: 1px 1px 10px 10px black;
   border: outset 4px rgb(22, 17, 51);
@@ -77,12 +95,12 @@ a{
   align-items: center;
   justify-content: center;
   animation: rotation 50s infinite;
-  transition: 3s ease-out;
+  transition: .800s ease-out;
 }
 .circle_2:hover {
   border-radius: 25px;
-  box-shadow: 1px 1px 10px 6px black;
-   background: transparent;
+  box-shadow: 1px 1px 6px 2px black;
+  border: solid 2px rgb(56, 46, 112);
 }
 
 .circle_3 {
@@ -96,11 +114,11 @@ a{
   align-items: center;
   justify-content: center;
   animation: rotation 70s infinite;
-  transition: 1s ease-in;
+  transition: .700s ease-in;
 }
 .circle_3:hover {
   border-radius: 15px;
-   background: transparent;
+    border: solid 4px rgb(3, 1, 73);
 }
 
 @keyframes rotation {
